@@ -1,0 +1,103 @@
+label{
+    color: white;
+}
+.container .cotizador{
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding-top: 4vh;
+    padding-bottom: 50px;
+}
+.container .cotizador .formulario .cantidad label{
+    font-size: 3vh;
+}
+.container .cotizador .formulario .cantidad input[type="number"]{
+   border-color: #ffffff;
+   border-width: 3px;
+   border-style: solid;
+   width: 90px;
+   height: 80px;
+   text-align: center;
+   font-size: 35px;
+   font-weight: 800;
+   margin: auto;
+   color: white;
+}
+.container .cotizador .formulario .bordado{
+    width: 65%;
+    margin: auto;
+}
+.container .cotizador .formulario .bordado label{
+    font-size: 3vh;
+}
+.container .cotizador .formulario .bordado input[type="checkbox"]{
+    width: 70px;
+    height: 70px;
+}
+.container .cotizador .formulario .bordado p{
+    font-size: 14px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+     color: #fff;
+}
+.container .cotizador .departamento select{
+    margin: auto;
+     width: 70%;
+     height: 100%;
+     text-align: center;
+     font-weight: 800;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 9vw;
+     margin-top: 40px;
+     text-transform: uppercase;
+     border-radius: 10px;
+     color: white;
+ }
+ .container .cotizador .departamento label{
+     margin-top: 30px;
+     font-size: 6vw;
+     font-weight: 800;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     text-shadow: -4.59151px 3.67321px 3.67321px rgba(255, 255, 255, 0.45);
+ 
+ }
+
+ .container .cotizador .departamento option{
+     color: black;
+ }
+
+ .container .cotizador .formulario .comprar{
+     padding-top: 40px;
+ }
+ .container .cotizador .formulario .comprar button{
+       border: none;
+       border-radius: 30px;
+       background-color: #fff;
+       color: rgb(0, 0, 0);
+       font-weight: 900;
+       width: 50%;
+       font-size: 20px;
+       text-shadow: 0 0 30px rgb(0, 0, 0);
+       box-shadow: 0 0 20px #fff;
+}
+@media only screen and (min-width: 504px) {
+    .container .cotizador .formulario{
+     margin: auto;
+     text-align: center;
+    }
+    .container .cotizador .departamento label{
+        font-size: 30px;    
+    }
+    .container .cotizador .departamento select{
+         font-size: 50px;
+      
+     }
+
+     
+}
+@media only screen and (min-width: 800px) {
+    .container .cotizador .departamento select{
+        font-size: 50px;
+        width: 500px;
+    }
+}
