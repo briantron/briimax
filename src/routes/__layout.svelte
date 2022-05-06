@@ -56,7 +56,7 @@ onAuthStateChanged(auth, (user) => {
                 <ul class="header-nav__list">
                     <li class="current"><a href="/" on:click={CerrarMenu} title="inicio">inicio</a></li>
                     <li><a href="/categorias" on:click={CerrarMenu} title="catalogo">Categorias</a></li>
-                    <li><a href="contactanos" on:click={CerrarMenu} title="contactanos">Contactanos </a></li>
+                    <li><a href="https://grupoempresarialevertex.herokuapp.com/contacto" on:click={CerrarMenu} title="contactanos">Contactanos </a></li>
 
                     {#if session}
                     <li><a href="/admin/home" on:click={CerrarMenu} title="admin">Administrar</a></li>
