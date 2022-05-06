@@ -7,19 +7,7 @@
       var departamento;
       export var modeloId;
       export var precioModelo;
-      export var titulo;
-
-      $: if (cantidadComprar < 5) {
-        precioModelo - 2
-      }else{
-        if (cantidadComprar < 11) {
-           precioModelo - 4
-        }else{
-          if (cantidadComprar < 23) {
-            precioModelo - 5
-          }
-        }
-      }
+      export var titulo
 
       function cantidad() {
         console.log(cantidadComprar);
@@ -83,6 +71,12 @@
              font-family: 'Open Sans', sans-serif; 
              font-weight: 400;
               color: #fff;">La cotizacion se completara en WhatsApp como: <br> Tallas - Precio Bordado - Tipo de Tela - Etc</p>
+              <p id="decuento" style="
+              padding-top: 20px;
+              font-size: 14px; 
+              font-family: 'Open Sans', sans-serif; 
+              font-weight: 400;
+              color: #55F53C;">Los descuentos seran: <br> Por 6 Unidades: {precioModelo - 3}Bs<br> Por 12 Unidades: {precioModelo - 5}Bs<br> Arriba de 24 Unidades: {precioModelo - 6}Bs</p>
          </div>
          <!-- 
          <button onclick="llamar()" style="margin-bottom: 40px; background-color: #144998; color: white; box-shadow: 0 0 20px #144998;">Llamar</button>
@@ -114,7 +108,7 @@
              line-height: 40px;
               ">Precio Total: <br> {precioTotal}Bs </p>
             </div>
-            <div class="informacion">
+         <!--    <div class="informacion" style="">
               <p id="decuento" style="
               margin: 0px 20px;
               font-size: 24px; 
@@ -123,7 +117,21 @@
               color: #fff;
               padding: 40px 0px 6px;
               line-height: 40px;
+               ">Precio por Unidad: <br> {precioModelo} </p>
+            </div>
+            -->
+    
+            <div class="informacion">
+               <p id="decuento" style="
+              margin: 0px 20px;
+              font-size: 24px; 
+              font-family: 'Open Sans', sans-serif; 
+              font-weight: 400;
+              color: #fff;
+              padding: 40px 0px 6px;
+              line-height: 40px;
                ">Para: <br> {departamento} </p>
+       
             </div>
     
           {/if}

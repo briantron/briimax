@@ -142,6 +142,7 @@ import mapa from '../../publico/img/mapas.png'
 precioModelo={modelo.precio}
 modeloId={modelo.id}
 titulo={modelo.titulo}
+precioSinDescuento={modelo.precio}
 ></Cotizador>
 
 </div>
