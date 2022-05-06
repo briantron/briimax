@@ -40,7 +40,7 @@
 
     
         <div class="categoria">
-            <a sveltekit:prefetch href="/categorias/termico">
+            <a sveltekit:prefetch href="/especiales/termico">
             <img src="{termico}" alt="">
             <h2>Termicos</h2>
             </a>
@@ -71,7 +71,7 @@
 
     
         <div class="categoria">
-            <a sveltekit:prefetch href="/categorias/pantalon">
+            <a sveltekit:prefetch href="/especiales/pantalon">
             <img src="{pantalonoverol}" alt="">
             <h2>Busos</h2>
         </a>

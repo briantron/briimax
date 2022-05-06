@@ -9,6 +9,17 @@
       export var precioModelo;
       export var titulo;
 
+      $: if (cantidadComprar < 5) {
+        precioModelo - 2
+      }else{
+        if (cantidadComprar < 11) {
+           precioModelo - 4
+        }else{
+          if (cantidadComprar < 23) {
+            precioModelo - 5
+          }
+        }
+      }
 
       function cantidad() {
         console.log(cantidadComprar);

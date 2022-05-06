@@ -37,7 +37,7 @@ import mapa from '../../publico/img/mapas.png'
 </script>
 
 <svelte:head>
-	<title>{modelo.titulo}</title>
+<title>{modelo.titulo}</title>
 
     <meta name="description" content={'Ropa Industrial Modelo ' + id} />
     <meta
@@ -131,7 +131,7 @@ import mapa from '../../publico/img/mapas.png'
     
     <div class="precioDiv" style="padding-bottom: 30px;">
         <div id="precioventa" class="wow animate__animated animate__fadeInDown precio">{modelo.precio}Bs</div>
-        <h5 style="font-size: 2rem; font-family: 'Open Sans', sans-serif; font-weight: 600; color: #FFFFFF;">Bolivianos Por Unidad</h5>
+        <h5 style="font-size: 2rem; font-family: 'Open Sans', sans-serif; font-weight: 600; color: #FFFFFF;">Se te brindara un descuento en WhatsApp dependiendo a la cantidad que adquieras</h5>
         <h2 style="color: #FFFFFF;font-weight: 300;margin-bottom: 0px;">{modelo.titulo}</h2>
     </div>
 
