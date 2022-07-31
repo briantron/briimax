@@ -29,7 +29,7 @@
   export let id; 
 export let modelos;
 console.log(modelos);
-
+import {  } from "../../js/firebase";
 </script>
 
 <svelte:head>
