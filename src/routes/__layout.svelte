@@ -88,4 +88,37 @@ onAuthStateChanged(auth, (user) => {
     .contenedorPadre{
         background-color: black;
     }
+    a.active {
+		color: rgb(216, 250, 23);
+	}
+	main {
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+
+	footer a {
+		font-weight: bold;
+	}
+    .s-header{
+        background-color: black;
+    }
+    .contenedorPadre{
+        margin-top: 97px;
+     
+    }
+	@media (min-width: 480px) {
+		footer {
+			padding: 40px 0;
+		}
+	}
 </style>
