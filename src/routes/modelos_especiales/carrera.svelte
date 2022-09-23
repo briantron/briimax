@@ -6,30 +6,31 @@
     import vistaDeracha from "./img/vistaDeracha.jpg";
     import vistaIzquierda from "./img/vistaIzquierda.jpg";
     import vistaTrasera from "./img/vistaTrasera.jpg";
-  
+    import { fade } from "svelte/transition";
        let bordadoCheck = false;
        var cantidadComprar;
        var precioTotal;
        var departamento;
-       var modeloId = "carrera";
+       var modeloId = "Lllllegionario";
        var precioModelo = 130;
-       var titulo = "carrera f1";
+       var titulo = "Overol Legionario";
 
 
 
-       var xl = 0;
-       var l = 0;
-       var m = 0;
-       var s = 0; 
+       var xl = '';
+       var l = '';
+       var m = '';
+       var s = ''; 
        function cantidad() {
+
+        
         var suma = xl + l + m + s;
         precioTotal = suma * precioModelo;
         console.log(precioTotal);
       }
        function comprar() {
             event.preventDefault()
-            alert('sss')
-            window.open(`https://api.whatsapp.com/send?phone=+59162569556&text=*${titulo}*%0A%0A*PEDIDO*:%20${'XL:%20' + xl + "%20L:%20" + l + "%20M:%20" + m + "%20S:%20" + s}%0A%0A*PRECIO%20UNIDAD*:%20${precioModelo}%0A%0A*BORDADO*:%20${exiteBordado(bordadoCheck)}%0A%0A*ID*:%20${modeloId}%0A%0A*DEPARTAMENTO*:%20${departamento}`) //%0A%0A%0A*PRECIO%20TOTAL*:%20${precioTotal}
+            window.open(`https://api.whatsapp.com/send?phone=+59176576474&text=*${titulo}*%0A%0A*PEDIDO*:%20${'XL:%20' + xl + "%20L:%20" + l + "%20M:%20" + m + "%20S:%20" + s}%0A%0A*PRECIO%20UNIDAD*:%20${precioModelo}%0A%0A*Personalizado*:%20${exiteBordado(bordadoCheck)}%0A%0A*ID*:%20${modeloId}%0A%0A*DEPARTAMENTO*:%20${departamento}`) //%0A%0A%0A*PRECIO%20TOTAL*:%20${precioTotal}
             }
     
     function bordado() {
@@ -37,9 +38,9 @@
       }
     function exiteBordado(bordado) {
         if (bordado) {
-            return 'Tendra bordado'
+            return 'Sera Personalizado'
         }else{
-            return 'No tendra bordado'
+            return 'No Sera Personalizado'
         }
       }
     </script>
@@ -54,14 +55,12 @@
                 </div>
             </div>
           <div class="texto">
-            <h1>"FORMULA 1"</h1>
-            <p>OVEROL</p>
+            <h1>OVEROL LEGIONARIO</h1>
             
             <img src="{homeimg}" alt="">
             <div class="textope">
-            <p>Marketing - Servicios - Capacitacion</p>
+            <p>OVEROL PILOTO PREMIUM</p>
             <a href="#cotizar"> <button>COTIZAR</button></a>
-            <p>Somos la primera empresa impulsora de negocios</p>
             </div>
           </div>    
           
@@ -73,9 +72,10 @@
             <!-- Caracteristicas -->
             <div class="caracteristica">
                 <div class="texto">
-                <h1>TALLAS A ELECCION</h1>
-                    <p>Tenemos toda una gama de tallas
-                        disponibles para su uso</p>
+                <h1>TELA KAKI 1RA   </h1>
+                    <p>Grueso y de algodon, no pierde color.
+                    Duradero y respirable
+                    </p>
                     </div>
                  <div class="img">
                         <img src="{mano}" alt="">
@@ -89,9 +89,8 @@
                     <img src="{mano}" alt="">
              </div>
                 <div class="texto">
-                <h1>TALLAS A ELECCION</h1>
-                    <p>Tenemos toda una gama de tallas
-                        disponibles para su uso</p>
+                <h1>MODELOS EXCLUSIVO</h1>
+                    <p>Un Modelo Exclusivo unico en el mercado</p>
                     </div>
             </div>
             <!--//Caracteristica -->
@@ -102,8 +101,68 @@
         <div class="imgMuestra">
             <img src="{vistaDelantera}" alt="">
             <img src="{vistaDeracha}" alt="">
+            <div class="salto">
+                <h1>CALIDAD</h1>
+            </div>
+            <div class="caracteristicas">
+                <!-- Caracteristicas -->
+                <div class="caracteristica">
+                    <div class="texto">
+                    <h1>VARIOS LOGOS</h1>
+                        <p>Logos unicos en impresion digital DTF</p>
+                        </div>
+                     <div class="img">
+                            <img src="{mano}" alt="">
+                     </div>
+                </div>
+                <!--//Caracteristica -->
+        
+                        <!-- Caracteristicas -->
+                <div class="caracteristica">
+                    <div class="img">
+                        <img src="{mano}" alt="">
+                 </div>
+                    <div class="texto">
+                    <h1>COSTURA RESISTENTE</h1>
+                        <p>Costurado con hilo industrial, altamente resistente y durable</p>
+                        </div>
+                </div>
+                <!--//Caracteristica -->
+            </div>
             <img src="{vistaIzquierda}" alt="">
             <img src="{vistaTrasera}" alt="">
+            <div class="salto">
+                <h1>MODELO UNICO</h1>
+            </div>
+            <div class="caracteristicas">
+                <!-- Caracteristicas -->
+                <div class="caracteristica">
+                    <div class="texto">
+                    <h1>REGULADORES DE BOTA PIE</h1>
+                        <p>Con reguladores de bota pie de doble agarre en las piernas
+                            para un agarre mas exacto
+                        </p>
+                        </div>
+                     <div class="img">
+                            <img src="{mano}" alt="">
+                     </div>
+                </div>
+                <!--//Caracteristica -->
+        
+                        <!-- Caracteristicas -->
+                <div class="caracteristica">
+                    <div class="img">
+                        <img src="{mano}" alt="">
+                 </div>
+                    <div class="texto">
+                    <h1>PUÑOS DE TEJIDO DE ALTA DEMANDA</h1>
+                        <p>Puños tejidos de lana 100% respirables
+                            y de mayor comodidad
+                        </p>
+                        </div>
+                </div>
+                <!--//Caracteristica -->
+            </div>
         </div>
         <div class="corte">
             <h1>MODELO PARA MECANICOS</h1>
@@ -116,6 +175,24 @@
                <a href="#cotizar"> <button>HACER PEDIDO</button></a>
             </div>
             </div>
+        </div>
+        <div class="salto">
+            <h1>PERSONALIZABLE</h1>
+        </div>  
+        <div class="caracteristicas">
+            <!-- Caracteristicas -->
+            <div class="caracteristica">
+                <div class="texto">
+                <h1>PERSONALIZADO</h1>
+                    <p>Por unos 40Bs mas personalizamos tus logos, color principal, color secundario y colores de las venas
+                    </p>
+                    </div>
+                 <div class="img">
+                        <img src="{mano}" alt="">
+                 </div>
+            </div>
+            <!--//Caracteristica -->
+
         </div>
         <div class="corte">
             <h1>COTIZA TU PEDIDO</h1>
@@ -148,14 +225,14 @@
             </div>
         </div>
         <div class="bordado">
-            <label for="">Bordado</label>
+            <label for="">Personalizado</label>
             <input on:change={bordado} bind:checked="{bordadoCheck}" type="checkbox" name="bordado" id="bordado">
             {#if !bordadoCheck}
                  <!-- content here -->
-                 <p id="avisoB" in:fade>Marque la casilla si el modelo llevara un bordado</p>
+                 <p id="avisoB" in:fade>Marque la casilla si el modelo sera personalizado</p>
             {:else}
                  <!-- else content here -->
-                 <p id="avisoB" in:fade>El Bordado que necesite se cotizara en WhatsApp</p>
+                 <p id="avisoB" in:fade>La personalizacion se cotizara en WhatsApp</p>
             {/if}
           
            </div>
@@ -253,7 +330,7 @@
     .contenedor .home .texto button{
         background: #007195;
         border-radius: 17.8318px;
-        width: 50%;
+        width: 70%;
         border: none;
         align-items: center;
         text-align: center;
@@ -276,7 +353,7 @@
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 800;
-        font-size: 29.9514px;
+        font-size: 10vw;
     }
     .contenedor .caracteristicas{
         width: 100%;
@@ -319,7 +396,7 @@
     .contenedor .cotizar button{
         background: #007195;
         border-radius: 17.8318px;
-        width: 50%;
+        width: 70%;
         border: none;
         align-items: center;
         text-align: center;
@@ -425,8 +502,8 @@
         font-size: 25px;
     }
      form input{
-        width: 60px;
-        height: 40px;
+        width: 20vw;
+        height: 50px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         text-align: center;
