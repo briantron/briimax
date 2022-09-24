@@ -41,9 +41,9 @@ onAuthStateChanged(auth, (user) => {
     <!-- header
     ================================================== -->
     <header class="s-header">
-        <div class="header-logo">
+        <div  class="header-logo">
             <a class="site-logo" href="/">
-                <img src="{logo}" width="50" alt="Pagina De Inicio">
+                <img id="imglogo" src="{logo}" width="50" alt="Pagina De Inicio">
             </a>
         </div>
 
@@ -61,12 +61,14 @@ onAuthStateChanged(auth, (user) => {
                     {#if session}
                     <li><a href="/admin/home" on:click={CerrarMenu} title="admin">Administrar</a></li>
                     {/if}
+                    <li><a href="/modelos_especiales/carrera" on:click={CerrarMenu} title="catalogo">Modelo Legionario</a></li>
                 </ul>
                 <p id="textoInf"></p>
             </div> <!-- end header-nav__content -->
 
         </nav>  <!-- end header-nav -->
-
+        
+        
     
         <p class="header-menu-toggle opaque" on:click={AbrirMenu}>
             <span class="header-menu-text">Menu</span>
@@ -84,6 +86,10 @@ onAuthStateChanged(auth, (user) => {
 <style>
     .s-header{
         background-color: black;
+    }
+
+    .s-header .header-logo a{
+        width: 120px;
     }
     .contenedorPadre{
         background-color: black;
@@ -115,6 +121,10 @@ onAuthStateChanged(auth, (user) => {
     .contenedorPadre{
         margin-top: 97px;
      
+    }
+    #imglogo{
+        width: 200px;
+        height: 30px;
     }
 	@media (min-width: 480px) {
 		footer {

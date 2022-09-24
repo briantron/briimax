@@ -1,18 +1,21 @@
 <script>
 
     import homeimg from "./img/homeimg.png";
-    import mano from "./img/mano.png";
+    import mano from "./img/man.png";
+    import botapie from "./img/botapie.png";
+    import logo from "./img/l1.png"
+    import tela from "./img/tela.jpg"
     import vistaDelantera from "./img/vistaDelantera.jpg";
-    import vistaDeracha from "./img/vistaDeracha.jpg";
-    import vistaIzquierda from "./img/vistaIzquierda.jpg";
-    import vistaTrasera from "./img/vistaTrasera.jpg";
+    import vistaDeracha from "./img/vistaDerecha.png";
+    import vistaIzquierda from "./img/vistaIzquierda.png";
+    import vistaTrasera from "./img/vistatrasera.png";
     import { fade } from "svelte/transition";
        let bordadoCheck = false;
        var cantidadComprar;
        var precioTotal;
        var departamento;
        var modeloId = "Lllllegionario";
-       var precioModelo = 130;
+       var precioModelo = 230;
        var titulo = "Overol Legionario";
 
 
@@ -60,7 +63,7 @@
             <img src="{homeimg}" alt="">
             <div class="textope">
             <p>OVEROL PILOTO PREMIUM</p>
-            <a href="#cotizar"> <button>COTIZAR</button></a>
+            <a href="#cotizar"> <button id="homecotizar">COTIZAR</button></a>
             </div>
           </div>    
           
@@ -78,7 +81,7 @@
                     </p>
                     </div>
                  <div class="img">
-                        <img src="{mano}" alt="">
+                        <img src="{tela}" alt="">
                  </div>
             </div>
             <!--//Caracteristica -->
@@ -86,11 +89,11 @@
                     <!-- Caracteristicas -->
             <div class="caracteristica">
                 <div class="img">
-                    <img src="{mano}" alt="">
+                    <img src="{homeimg}" alt="">
              </div>
                 <div class="texto">
                 <h1>MODELOS EXCLUSIVO</h1>
-                    <p>Un Modelo Exclusivo unico en el mercado</p>
+                    <p>Un Modelo Exclusivo unico en Bolivia</p>
                     </div>
             </div>
             <!--//Caracteristica -->
@@ -99,8 +102,10 @@
             <a href="#cotizar"><button>HACER PEDIDO</button></a>
         </div>
         <div class="imgMuestra">
-            <img src="{vistaDelantera}" alt="">
-            <img src="{vistaDeracha}" alt="">
+            <div class="muestra">
+                <img src="{vistaDeracha}" alt="">
+                <img src="{vistaIzquierda}" alt="">
+             </div>
             <div class="salto">
                 <h1>CALIDAD</h1>
             </div>
@@ -112,31 +117,20 @@
                         <p>Logos unicos en impresion digital DTF</p>
                         </div>
                      <div class="img">
-                            <img src="{mano}" alt="">
+                            <img src="{logo}" alt="">
                      </div>
                 </div>
                 <!--//Caracteristica -->
         
-                        <!-- Caracteristicas -->
-                <div class="caracteristica">
-                    <div class="img">
-                        <img src="{mano}" alt="">
-                 </div>
-                    <div class="texto">
-                    <h1>COSTURA RESISTENTE</h1>
-                        <p>Costurado con hilo industrial, altamente resistente y durable</p>
-                        </div>
-                </div>
-                <!--//Caracteristica -->
+                
             </div>
-            <img src="{vistaIzquierda}" alt="">
             <img src="{vistaTrasera}" alt="">
             <div class="salto">
                 <h1>MODELO UNICO</h1>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" style="background-color: #f88d00;" >
                 <!-- Caracteristicas -->
-                <div class="caracteristica">
+                <div class="caracteristica" style="background-color: #f88d00;">
                     <div class="texto">
                     <h1>REGULADORES DE BOTA PIE</h1>
                         <p>Con reguladores de bota pie de doble agarre en las piernas
@@ -144,13 +138,13 @@
                         </p>
                         </div>
                      <div class="img">
-                            <img src="{mano}" alt="">
+                            <img src="{botapie}" alt="">
                      </div>
                 </div>
                 <!--//Caracteristica -->
         
                         <!-- Caracteristicas -->
-                <div class="caracteristica">
+                <div class="caracteristica" style="background-color: #f88d00;">
                     <div class="img">
                         <img src="{mano}" alt="">
                  </div>
@@ -164,12 +158,13 @@
                 <!--//Caracteristica -->
             </div>
         </div>
-        <div class="corte">
-            <h1>MODELO PARA MECANICOS</h1>
-        </div>
+         <div class="corte">
+            <h1 style="color: #144998;">VARIEDAD DE TALLAS Y COLORES</h1>
+        </div> 
+     
         <div class="precioView">
             <div class="precio">
-            <h1>120BS</h1>
+            <h1>{precioModelo}BS</h1>
             <p>Precio  Por Unidad</p>
             <div class="cotizar">
                <a href="#cotizar"> <button>HACER PEDIDO</button></a>
@@ -179,17 +174,16 @@
         <div class="salto">
             <h1>PERSONALIZABLE</h1>
         </div>  
-        <div class="caracteristicas">
+        <div class="caracteristicas1" style="display: block; text-align: center;">
             <!-- Caracteristicas -->
-            <div class="caracteristica">
+            <div class="caracteristica" style="margin: auto;">
                 <div class="texto">
-                <h1>PERSONALIZADO</h1>
-                    <p>Por unos 40Bs mas personalizamos tus logos, color principal, color secundario y colores de las venas
+                    <p style="color: #fff; margin: 20px 0px 0px;   font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 800;">Por unos 40Bs mas personalizamos tus logos, color principal de la tela, color secundario y colores de las venas
                     </p>
                     </div>
-                 <div class="img">
-                        <img src="{mano}" alt="">
-                 </div>
+            
             </div>
             <!--//Caracteristica -->
 
@@ -257,7 +251,7 @@
         <!-- Botton de compra -->
         <div class="form-field">
             <p id="total">Precio Total:  </p>
-           <button class="full-width btn--primary" on:click="{comprar}" id="buy">Comprar</button>
+           <button class="full-width btn--primary" on:click="{comprar}" id="buy">Ir WhatsApp</button>
             <div class="submit-loader">
                 <div class="text-loader">redireccionando a <br> WhatsApp</div>
                 <div class="s-loader">
@@ -273,7 +267,20 @@
     
     
     <style>
-    .video-background {
+#homecotizar{
+    background: #007195;
+        border-radius: 17.8318px;
+        width: 70%;
+        border: none;
+        align-items: center;
+        text-align: center;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        color: #FFFFFF;
+        margin: 16px 0px;
+}
+.video-background {
       background: #000;
       top: 0; right: 0; bottom: 0; left: 0;
       z-index: -99;
@@ -324,7 +331,7 @@
     .contenedor .home .texto img{
         margin-top: 10px;
         margin-bottom: 30px;
-        width: 60%;
+        width: 70%;
         height: 50%;
     }
     .contenedor .home .texto button{
@@ -354,6 +361,17 @@
         font-style: normal;
         font-weight: 800;
         font-size: 10vw;
+    }
+    .contenedor .imgMuestra .muestra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor .imgMuestra .muestra img{
+        width: 50%;
+        width: wrap;
+        margin: 0px 10px ;
+        border-radius: 20px;
     }
     .contenedor .caracteristicas{
         width: 100%;
@@ -422,7 +440,8 @@
         font-size: 29.9514px;
     }
     .contenedor .precioView{
-        background-image: url("https://firebasestorage.googleapis.com/v0/b/evertexgrupoempresarial.appspot.com/o/fondo.png?alt=media&token=edf06886-1629-427b-a62c-dc6ddd9b1588");
+      
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/evertexgrupoempresarial.appspot.com/o/NASCAR.jpg?alt=media&token=236c4260-2182-4e4f-9c40-e01667b02cba");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -573,6 +592,7 @@
       border: 10px solid #144998;
       color: white;
       width: 60%;
+      background-color: #144998;
       font-size: 20px;
       height: wrap;
     }
