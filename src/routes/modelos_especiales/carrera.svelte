@@ -47,7 +47,26 @@
         }
       }
     </script>
+    <svelte:head>
+        <title>Modelo Legionario</title>
     
+      <meta name="description" content={'Ropa Industrial'} />
+      <meta
+        name="robots"
+        content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      />
+    
+       <!--- basic page needs
+      ================================================== -->
+      <meta property="og:locale" content="es_ES"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="Ropa Industrial Briimax"/>
+      <meta property="og:description" content="Overol Legionario Exclusivo"/>
+    
+      <meta property="og:site_name" content="Overol Legionario"><meta property="og:title" content="Overol Legionario" /> <meta property="og:description" content="Overol Exclusivo con diseño especial" /> <meta property="og:image" itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/evertexgrupoempresarial.appspot.com/o/legionario.png?alt=media&token=8e3eb036-0ff3-4611-be23-50015af09ee9"> <meta property="og:type" content="website" /> <meta property="og:updated_time" content="1440432930" /> 
+     
+    
+    </svelte:head>
     <div class="contenedor">
         <div class="home">
              <!-- oblogatorio para poner un video de fondo -->

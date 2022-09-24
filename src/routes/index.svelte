@@ -3,7 +3,7 @@ import logo from '../publico/img/evertexText.png';
 </script>
 
 <svelte:head>
-	<title>Ropa Industrial Evertex</title>
+	<title>Ropa Industrial Briimax</title>
 
   <meta name="description" content={'Ropa Industrial'} />
   <meta
@@ -15,13 +15,13 @@ import logo from '../publico/img/evertexText.png';
   ================================================== -->
   <meta property="og:locale" content="es_ES" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ropa Industrial Evertex" />
+  <meta property="og:title" content="Ropa Industrial Briimax" />
   <meta property="og:description" content="Overoles Industriales" />
   
   <!-- Para facebook, SMS -->
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Evertex Cotize su modelo Ya!" />
+  <meta property="og:image:alt" content="Briimax Cotize su modelo Ya!" />
 
    <!-- Para whatsapp -->
 
@@ -35,14 +35,16 @@ import logo from '../publico/img/evertexText.png';
 <div class="contenedor">
     <div class="menu">
         <h1>Ropa Industrial</h1>
-        <h2>EVERTEX</h2>
-        <div class="opciones">
+        <h2>BRIIMAX</h2>
+
+        <!--   <div class="opciones">
             <a sveltekit:prefetch href="categorias">Categorias</a> 
         </div>
           
         <div class="opciones">
             <a sveltekit:prefetch href="https://grupoempresarialevertex.herokuapp.com/contacto">Contacto</a>
-        </div>
+        </div> -->
+      
         
     </div>
 </div>
@@ -76,7 +78,7 @@ import logo from '../publico/img/evertexText.png';
         font-weight: 600;
         color: white;
         font-family: 'Patua One', cursive;
-        -webkit-text-stroke: 8px #144998;
+        -webkit-text-stroke: 8px #d18800;
     }
     .contenedor .menu .opciones{
         margin-top: 30px;
@@ -105,7 +107,7 @@ import logo from '../publico/img/evertexText.png';
     .contenedor .menu h2{
         font-size: 10vw;
         font-family: 'Patua One', cursive;
-        -webkit-text-stroke: 3px #144998;
+        -webkit-text-stroke: 2px #c96b00;
       }
       .contenedor .menu .opciones a{
         font-size: 8vw;
